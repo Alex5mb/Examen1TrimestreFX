@@ -40,7 +40,7 @@
       </VBox>
    </top>
    <center>
-      <TableView prefHeight="578.0" prefWidth="818.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="tabla" prefHeight="578.0" prefWidth="818.0" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn fx:id="tabla_nombre" prefWidth="148.0" text="Nombre" />
           <TableColumn fx:id="tabla_sexo" prefWidth="65.0" text="Sexo" />
@@ -89,9 +89,9 @@
                   <TextField fx:id="nombre" GridPane.columnIndex="1" />
                   <ComboBox fx:id="sexo" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <ComboBox fx:id="actividad" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                  <Spinner fx:id="edad" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <Spinner fx:id="peso" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Spinner fx:id="altura" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Spinner fx:id="edad" GridPane.columnIndex="1" GridPane.rowIndex="2" editable="true"  />
+                  <Spinner fx:id="peso" GridPane.columnIndex="1" GridPane.rowIndex="3" editable="true"/>
+                  <Spinner fx:id="altura" GridPane.columnIndex="1" GridPane.rowIndex="4" editable="true"/>
                </children>
             </GridPane>
             <VBox alignment="CENTER" prefHeight="88.0" prefWidth="194.0">
